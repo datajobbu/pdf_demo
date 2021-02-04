@@ -1,9 +1,10 @@
 import xhtml2pdf.pisa as pisa
+
 from io import BytesIO
-from django.template.loader import get_template
 
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template.loader import get_template
 
 from .models import Report 
 
