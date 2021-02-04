@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC>
+<html>
+    <title>AT TABLE</title>
+</html>
+<body>
+    <table border="1">
+        <thead>
+            <th>code</th>
+            <th>title</th>
+        </thead>
+        <tbody>
+            {% if articles %}
+            {% for at in articles %}
+            <tr>
+                <td>{{ at.code }}</td>
+                <td>{{ at.title }}</td>
+            </tr>
+            {% endfor %}
+            {% else %}
+            <tr>
+                <td>내용이 없습니다.</td>
+            </tr>
+            {% endif %}
+        </tbody>   
+    </table>
+</body>
