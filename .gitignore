@@ -4,6 +4,6 @@ secrets.json
 *.db
 *.sqlite3
 *.log
-font
+fonts
 img
 **.DS_Store

@@ -13,7 +13,7 @@
             {% for at in articles %}
             <tr>
                 <td>{{ at.code }}</td>
-                <td>{{ at.title }}</td>
+                <td><a href="{{ at.code }}/">{{ at.title }}</a></td>
             </tr>
             {% endfor %}
             {% else %}
