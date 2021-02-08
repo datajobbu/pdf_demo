@@ -7,3 +7,6 @@ secrets.json
 fonts
 img
 **.DS_Store
+static
+migrations
+includes

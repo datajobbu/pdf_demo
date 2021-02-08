@@ -22,7 +22,7 @@ def detail(request, code):
     template = get_template('pdf.html')
     html = template.render(context)
     response = BytesIO()
-    pdf = pisa.pisaDocument(BytesIO(html.encode("UTF-8")), response)
+    pdf = pisa.pisaDocument(BytesIO(html.encode("utf-8")), response)
 
     if not pdf.err:
         return HttpResponse(response.getvalue(), content_type='application/pdf')
